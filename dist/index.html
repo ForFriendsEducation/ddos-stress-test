@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>DDOS STRESS TEST</title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <section class="main-container">
+        <div class="form">
+            <h1>DDos stress test</h1>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="ipAddressForm">Введите IP адрес</span>
+                </div>
+                <input type="text" class="form-control" id="ipAddress" value="http://192.168.3.44/" aria-describedby="ipAddressForm">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="requestQuantityForm">Кол-вр запросов/секунда</span>
+                </div>
+                <input type="text" class="form-control" id="requestQuantity" value="50" aria-describedby="requestQuantityForm">
+            </div>
+
+            <div class="actions">
+                <button type="button" class="btn btn-success" id="start">Start</button>
+                <button type="button" class="btn btn-danger" id="stop">Stop</button>
+            </div>
+        </div>
+        <br>
+        <div class="status">
+            <h2>Статус</h2>
+            <p>Номер цикла: <span id="loopNodes">0</span></p>
+            <hr>
+            <p class="text-success">Успешных запросов: <span id="activeNodes">0</span></p>
+            <p class="text-danger">Ошибочных запросов: <span id="errorNodes">0</span></p>
+        </div>
+
+    </section>
+
+
+<script src="index.js"></script>
+</body>
+</html>
