@@ -2,9 +2,9 @@
   "name": "ddos",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "ddos.js",
   "scripts": {
-    "dev": "node index.js",
+    "dev": "node ddos.js",
     "build": "node ./esbuild-config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
